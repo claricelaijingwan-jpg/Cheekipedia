@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Achivements</title>
+  <link rel="shortcut icon" type="image/png"href="logo4.png">
+  <style>
+    :root{
+      --accent:#3366cc;
+      --muted:#6b7280;
+      --bg:#f8f9fa;
+      --paper:#ffffff;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+    body{margin:0;background:var(--bg);color:#111}
+
+      header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      background:var(--paper);
+      padding:10px 20px;
+      box-shadow:0 1px 3px rgba(0,0,0,0.1);
+      position:sticky;
+      top:0;
+      z-index:900;
+    }
+    #menuBtn{
+      font-size:24px;
+      cursor:pointer;
+      padding:6px 10px;
+      border-radius:6px;
+    }
+    #menuBtn:hover{
+      background:#ececec;
+    }
+    .logo{
+      font-size:24px;
+      font-weight:600;
+      font-family:Georgia, serif;
+    }
+    .subtitle{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:-6px;
+    }
+
+    
+    #sideNav{
+      position:fixed;
+      top:0;
+      left:0;
+      width:250px;
+      height:100vh;
+      background:var(--paper);
+      border-right:1px solid #e5e5e5;
+      padding:20px;
+      transform:translateX(-100%);
+      transition:0.25s ease;
+      z-index:1000;
+    }
+    #sideNav.open{transform:translateX(0);}
+    #sideNav h3{margin-top:0;font-size:16px;color:#333}
+    #sideNav a{
+      display:block;
+      padding:8px 4px;
+      color:var(--accent);
+      text-decoration:none;
+      font-size:15px;
+      border-radius:4px;
+    }
+    #sideNav a:hover{
+      background:#f0f4ff;
+    }
+
+
+#sideNav.open{transform:translateX(0);}
+    #sideNav h3{margin-top:0;font-size:16px;color:#333}
+    #sideNav a{
+      display:block;
+      padding:8px 4px;
+      color:var(--accent);
+      text-decoration:none;
+      font-size:15px;
+      border-radius:4px;
+    }
+ 
+
+.container{max-width:1700px;margin:20px auto;padding:0 16px;}
+    .content-section{background:var(--paper);padding:20px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.05);}
+    h2{margin-top:0}
+
+.achievement-timeline {
+    border-left: 3px solid var(--accent);
+    margin-left: 20px;
+    padding-left: 30px;
+    position: relative;
+    list-style: none;
+}
+
+.achievement-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.achievement-item::before {
+    content: '';
+    position: absolute;
+    left: -41px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--paper);
+    border: 4px solid var(--accent);
+    border-radius: 50%;
+}
+
+.achievement-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--accent);
+    font-family: Georgia, serif;
+}
+
+.badge-custom {
+    background-color: #f0f4ff;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.achievement-details {
+    margin: 0;
+    line-height: 1.6;
+    color: #444;
+}
+    </style>
+</head>
+<body>
+
+<body style="background-color:#C0C0C0;">
+
+<header>
+  <div id="menuBtn">☰</div>
+  <div id="logo"; ><a href="cheekipedia.html"><img src="logo3.png" width="50 height="50";></a></div>
+  <div>
+    <div class="logo">Cheekipedia</div>
+    <div class="subtitle">The Probably Free Encyclopedia</div>
+  </div>
+</header>
+
+<nav id="sideNav">
+  <h3>Contents</h3>
+  <ul style="list-style:none; padding-left:0; margin:0;">
+   	<li><a href="index.html"> About</a></li>
+	<li><a href="education3.html"> Education </a></li>
+  	<li><a href="favourite3.html"> Favourites & Obsessions</a></li>
+	<li><a href="achivements2.html">Achivements</a></li>
+   	<li><a href="gallery2.html"> Gallery </a></li>
+</nav>
+
+<div class="container">
+  <section id="background" class="content-section page-section">
+    <center>
+    <h2>Achivements</h2>
+    <hr>
+    </center>
+    <p>From Cheekipedia, the probably free encyclopedia</p>
+    <br>
+
+<section id="education" class="content-section">
+  <div class="text-center">
+    <h2 style="font-family: Georgia, serif;">Achivements Along the Way</h2>
+    <hr style="width: 50px; border: 2px solid var(--accent); margin: 5px auto 20px;">
+  </div>
+
+<div class="achievement-timeline">
+    
+    <li class="achievement-item">
+        <span class="badge-custom">Current Milestone</span>
+        <div class="achievement-title">UiTM Samarahan</div>
+        <div class="achievement-details">
+            • <b>Dean's List</b> - Semester 1<br>
+            • Current CGPA: <b>3.34</b>
+        </div>
+    </li>
+
+    <li class="achievement-item">
+        <span class="badge-custom">Secondary Excellence</span>
+        <div class="achievement-title">SMK Semerah Padi</div>
+        <div class="achievement-details">
+            • <b>Gold Award</b> - Sirim Invention Innovation Technology Expo 2022 (SI2TE2022)<br>
+            • <b>Gold Award</b> - Africa Invention and Innovation Expo 2022<br>
+            • <b>Principal's Special Award</b><br>
+            • SPM Result: <b>9As 1B</b>
+        </div>
+    </li>
+
+    <li class="achievement-item">
+        <span class="badge-custom">Foundation</span>
+        <div class="achievement-title">SK Siol Kanan</div>
+        <div class="achievement-details">
+            • Academic Achievement: <b>2As 4Bs</b>
+        </div>
+    </li>
+
+</div>
+
+<section id="education" class="content-section">
+  <div class="text-center">
+    <h2 style="font-family: Georgia, serif;">Reference: Her Study Skills</h2>
+    <hr style="width: 50px; border: 2px solid var(--accent); margin: 5px auto 20px;">
+  </div>
+<center>
+<br>
+<p style="font-size:20px; color: Black";><b><i> &nbsp; &#8595; Video of Anis sharing her study skills &#8595; </i></b></p>
+<video width="700" height="400" controls>
+  <source src="video1.mp4" type="video/mp4">
+  <source src="video1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<p><i>Source: Stalking from Anis's YouTube Channel </i></p>
+
+
+</center>
+<hr>
+    <script type="text/javascript">
+       document.write("  This page was last edited on <b>"+Date()+"</b>");
+    </script>
+<br>
+<br>
+<p>
+<b>  This website is created to fulfill the requirement of IMD318 individual project.</b> By using this site, you agree to the Terms of Use and Privacy Policy. Cheekipedia® is a registered trademark of the Eclipse Foundation, Inc., a non-profit organization. </p>
+
+
+  </div>
+  
+ 
+
+  </section>
+</div>
+
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const sideNav = document.getElementById('sideNav');
+  const sections = document.querySelectorAll('.page-section');
+
+  menuBtn.onclick = ()=>{
+    sideNav.classList.toggle('open');
+  }
+
+  document.querySelectorAll('.side-link').forEach(link=>{
+    link.onclick = e=>{
+      e.preventDefault();
+      const target = link.dataset.target;
+      sections.forEach(sec=> sec.style.display = sec.id === target ? '' : 'none');
+      sideNav.classList.remove('open');
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
