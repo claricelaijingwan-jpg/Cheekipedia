@@ -1,0 +1,159 @@
+<html> 
+<head> 
+<title> CSS FOR FAVOURITES </title>
+</head>
+
+
+<style>
+    :root{
+      --accent:#3366cc;
+      --muted:#6b7280;
+      --bg:#006400;
+      --paper:#ffffff;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+    body { 
+	background-image: url('background4.jpg');
+	background-size: cover;
+	background-position: top 25% right 0;
+ }
+
+    /* TOP BAR */
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      background:#9932cc;
+      padding:10px 20px;
+      box-shadow:0 1px 3px rgba(0,0,0,0.1);
+      position:sticky;
+      top:0;
+      z-index:900;
+    }
+    #menuBtn{
+      font-size:24px;
+      cursor:pointer;
+      padding:6px 10px;
+      border-radius:6px;
+    }
+    #menuBtn:hover{
+      background:#dda0dd;
+    }
+    .logo{
+      font-size:24px;
+      font-weight:600;
+      font-family:Georgia, serif;
+    }
+    .subtitle{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:-6px;
+    }
+
+    /* SIDE NAV */
+    #sideNav{
+      position:fixed;
+      top:0;
+      left:0;
+      width:250px;
+      height:100vh;
+      background:White;
+      border-right:1px solid #e5e5e5;
+      padding:20px;
+      transform:translateX(-100%);
+      transition:0.25s ease;
+      z-index:1000;
+    }
+    #sideNav.open{transform:translateX(0);}
+    #sideNav h3{margin-top:0;font-size:16px;color:#333}
+    #sideNav a{
+      display:block;
+      padding:8px 4px;
+      color:var(--accent);
+      text-decoration:none;
+      font-size:15px;
+      border-radius:4px;
+    }
+    #sideNav a:hover{
+      background:#dda0dd;
+    }
+
+
+#sideNav.open{transform:translateX(0);}
+    #sideNav h3{margin-top:0;font-size:16px;color:#333}
+    #sideNav a{
+      display:block;
+      padding:8px 4px;
+      color:var(--accent);
+      text-decoration:none;
+      font-size:15px;
+      border-radius:4px;
+    }
+ 
+
+.container{ max-width: 3000px; margin:20px auto;padding:0 16px;}
+    .content-section{background:#dda0dd;padding:30px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.05);}
+    h2{margin-top:0}
+ 
+
+
+
+.container{section-p1{padding: 40px 80px;}
+
+#feature{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	}
+
+#feature .fe-box{
+	width: 300px;
+	text-align: center;
+	padding: 25px 15px;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+	border: 1px solid #c71585;
+	border-radius:4px;
+	margin: 15px 0;
+	}
+
+#feature .fe-box:hover{
+	box-shadow:20px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img{
+	width:90%;
+	margin-bottom:10px;
+}
+
+#feature .fe-box h6{
+	display:inline-block; 
+	padding: 9px 8px 6px 8px;
+	line-height: 1;
+	border-radius: 4px;
+	color: #088178;
+	background-color:#fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+	background-color:#cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+	background-color:#d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+	background-color:#cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6 {
+	background-color:#cdd4f8;
+}
+}
+
+
+
+   </style>
+
+
+</html>
